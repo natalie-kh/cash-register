@@ -1,0 +1,32 @@
+AllCops:
+  NewCops: disable
+
+Documentation:
+  Enabled: false
+
+Style/ModuleFunction:
+  Enabled: false
+
+Style/RegexpLiteral:
+  Enabled: false
+
+Lint/NonDeterministicRequireOrder:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 100
+  Exclude:
+    - spec/**/*
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/GlobalVars:
+  Enabled: false
