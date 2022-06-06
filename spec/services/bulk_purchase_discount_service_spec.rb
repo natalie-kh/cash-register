@@ -24,14 +24,16 @@ describe BulkPurchaseDiscountService do
     describe "when count of products == min_count" do
       it "returns cost with discount" do
         count = 3
-        assert BulkPurchaseDiscountService.call(@product, @product_offer, count) == @product_offer.rule_data[:new_price] * count
+        assert BulkPurchaseDiscountService.call(@product, @product_offer,
+                                                count) == @product_offer.rule_data[:new_price] * count
       end
     end
 
     describe "when count of products > min_count" do
       it "returns cost with discount" do
         count = 4
-        assert BulkPurchaseDiscountService.call(@product, @product_offer, count) == @product_offer.rule_data[:new_price] * count
+        assert BulkPurchaseDiscountService.call(@product, @product_offer,
+                                                count) == @product_offer.rule_data[:new_price] * count
       end
     end
   end
