@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 # Сlass-reference that allows to create product_offer templates.
+# Creating a new offer involves adding a handler to the CalculateDiscountService
 
 # @params code [String] - offer code (must be unique)
 # @params description [String] - short description on logical idea of the offer
