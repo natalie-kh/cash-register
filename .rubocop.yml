@@ -13,3 +13,7 @@ Style/GlobalVars:
 Metrics/BlockLength:
   Exclude:
     - spec/**/*
+
+Metrics/MethodLength:
+  Exclude:
+    - db/*
