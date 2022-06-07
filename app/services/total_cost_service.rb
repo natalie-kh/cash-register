@@ -7,6 +7,9 @@
 
 class TotalCostService < BaseService
   def call(products)
+    # Note that switching to a real database will cause N+1.
+    # In the case of a rails application, this can be avoided as follows:
+    # products = Product.includes(:product_offers).where(code: products)
     products.tally.sum do |product_code, count|
       product_cost(product_code, count)
     end

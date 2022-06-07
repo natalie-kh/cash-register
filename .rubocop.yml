@@ -17,3 +17,4 @@ Metrics/BlockLength:
 Metrics/MethodLength:
   Exclude:
     - db/*
+    - ./menu.rb
